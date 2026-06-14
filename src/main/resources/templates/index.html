@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Listado de Videojuegos</title>
+</head>
+
+<body>
+
+    <h1>Listado de Videojuegos</h1>
+
+    <ul>
+        <li th:each="v : ${videojuegos}">
+            <span th:text="${v.nombre}"></span>
+            -
+            S/
+            <span th:text="${v.precio}"></span>
+        </li>
+    </ul>
+
+</body>
+
+</html>
