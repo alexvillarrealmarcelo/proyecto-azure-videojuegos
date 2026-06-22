@@ -8,6 +8,7 @@
 		<version>4.1.0</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
+	<packaging>war</packaging>
 	<groupId>com.pe.cloud.computing.ciclo8</groupId>
 	<artifactId>project-avm</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
@@ -69,8 +70,9 @@
 			<scope>test</scope>
 		</dependency>
 	</dependencies>
-
+   
 	<build>
+		<finalName>app-videojuegos</finalName>
 		<plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
